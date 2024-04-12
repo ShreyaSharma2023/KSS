@@ -1,3 +1,7 @@
+import numpy as np
+from scipy.sparse import diags
+from scipy.sparse.linalg import spsolve
+
 def solve_heat_equation_implicit(alpha, dx, dy, dt, nx, ny, nt):
     """
     Solves the 2D heat equation using an implicit finite difference method with Dirichlet boundary conditions.

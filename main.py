@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from heat_implicit import *
 
 
 # Parameters
@@ -18,5 +19,6 @@ X, Y = np.meshgrid(x, y)
 # Forcing function for Poisson's Eq.
 f = -2 * np.pi**2 * np.sin(np.pi * X) * np.sin(np.pi * Y)
 
-
+u = solve_heat_equation_implicit(alpha, dx, dy, dt, nx, ny, nt)
+print(u)
 
