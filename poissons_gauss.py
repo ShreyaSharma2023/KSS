@@ -1,3 +1,5 @@
+import numpy as np
+
 def solve_poisson_equation_gs(f, dx, dy, nx, ny):
     """
     Solves the 2D Poisson equation over a rectangular domain using the Gauss-Seidel iterative method.
